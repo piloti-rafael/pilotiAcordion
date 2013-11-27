@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Accordion</title>
+
+		<script src="jquery.2.0.3.js"></script>
+
+		<script src="pilotiAcordion.js"></script>
+
+		<style>
+			#acordion ul{display:none;};
+		</style>
+
+		<script>
+			$(document).ready(function(){
+				$(".acordion").pilotiAcordion();
+			});
+		</script>
+
+	</head>
+
+	<body>
+		<ul id="acordion">
+			<li>
+				<a href="#" class="acordion">Teste 2</a>
+				<ul data-accordion='true'>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+				</ul>
+			</li>
+
+			<li><a href="#" class="acordion">Teste 3</a>
+				<ul data-accordion='true'>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+
+				</ul>
+			</li>
+			<li><a href="#" class="acordion" >Teste 4</a>
+				<ul data-accordion='true'>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+
+				</ul>
+			</li>
+
+		</ul>
+
+	</body>
+
+</html>
